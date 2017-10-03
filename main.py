@@ -6,7 +6,7 @@ import random
 while True:
     num = random.randint(2000000,3000000)
 
-    bugguide = "http://bugguide.net/node/view/"+str(num)+"/bgimage"
+    bugguide = "http://bugguide.net/node/view/"+str(num)+"/bgimage" 
     # bugguide ="http://bugguide.net/node/view/1446859/bgimage"
 
     page = rq.get(bugguide)
