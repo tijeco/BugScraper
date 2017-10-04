@@ -18,7 +18,7 @@ for num in range(2000000):
         titleFields = len(titleSplit)
 
         if titleFields == 1:
-            title2write = "wget -O bg_"+str(num) +'_'+title.replace(" ", "-")+".jpeg "+src
+            title2write = "wget -O bg_"+str(num) +'_'+title.replace(" ", "-").replace(",","")+".jpeg "+src
         # elif titleFields == 2:
         #     title2write = titleSplit[1]
         # elif "female" not in titleFields[:-1] and "male" not in titleFields[:-1]:
